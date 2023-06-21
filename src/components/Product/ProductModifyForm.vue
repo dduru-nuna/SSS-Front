@@ -91,7 +91,7 @@
                     <span class="ingredientImage">기존 제품사진</span>
                     <div class="d-flex justify-content-center" style="margin-bottom:30px">
                         <div v-for="(imagePath, idx) in product.productImgList" :key="idx" md="3">
-                            <img style="width: 500px; height: 500px;"
+                            <img style="width: 150px; height: 150px;"
                                 :src="require(`@/assets/product/${imagePath.editedImg}`)" aspect-ratio="1" />
                         </div>
                     </div>
@@ -100,7 +100,7 @@
                     <span class="ingredientImage">변경 될 제품사진</span>
                     <div class="d-flex justify-content-center">
                         <div v-for="(url, index) in imageUrls" :key="index" md="3">
-                            <img style="width: 500px; height: 500px;" :src="url" :alt="'Image ' + index" aspect-ratio="1" />
+                            <img style="width: 150px; height: 150px;" :src="url" :alt="'Image ' + index" aspect-ratio="1" />
                         </div>
                     </div>
                     <v-col>
